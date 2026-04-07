@@ -37,18 +37,26 @@
   --input: 240 5% 20%;
   --ring: 180 100% 50%;
 
-  --radius: 0px; /* Sharp edges for technical feel */
+  --radius: 0px;
+  /* Sharp edges for technical feel */
 }
 
 @layer base {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground antialiased selection:bg-primary selection:text-primary-foreground overflow-x-hidden;
     font-family: var(--font-sans);
   }
-  h1, h2, h3, h4, h5, h6 {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: var(--font-display);
     @apply tracking-tight uppercase;
   }
@@ -58,9 +66,11 @@
 .text-glow-primary {
   text-shadow: 0 0 10px hsla(var(--primary) / 0.5), 0 0 20px hsla(var(--primary) / 0.3);
 }
+
 .text-glow-secondary {
   text-shadow: 0 0 10px hsla(var(--secondary) / 0.5), 0 0 20px hsla(var(--secondary) / 0.3);
 }
+
 .text-glow-accent {
   text-shadow: 0 0 10px hsla(var(--accent) / 0.5), 0 0 20px hsla(var(--accent) / 0.3);
 }
@@ -86,13 +96,16 @@
 ::-webkit-scrollbar {
   width: 10px;
 }
+
 ::-webkit-scrollbar-track {
   background: hsl(var(--background));
 }
+
 ::-webkit-scrollbar-thumb {
   background: hsl(var(--muted));
   border: 1px solid hsl(var(--border));
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: hsl(var(--primary));
 }

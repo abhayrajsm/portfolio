@@ -12,7 +12,7 @@ import { Mail, MapPin, Phone } from "lucide-react";
 export default function Contact() {
   const { toast } = useToast();
   const sendMessage = useSendMessage();
-  
+
   const form = useForm<InsertMessage>({
     resolver: zodResolver(insertMessageSchema),
     defaultValues: {
@@ -64,7 +64,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground uppercase tracking-wider">Email</p>
-                  <p className="font-bold">hello@devseo.com</p>
+                  <p className="font-bold">Abhaymotakpalli6@gmail.com</p>
                 </div>
               </NeonCard>
 
@@ -74,7 +74,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground uppercase tracking-wider">Phone</p>
-                  <p className="font-bold">+1 (555) 000-0000</p>
+                  <p className="font-bold">+91 8867371016</p>
                 </div>
               </NeonCard>
 
@@ -84,7 +84,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground uppercase tracking-wider">Location</p>
-                  <p className="font-bold">San Francisco, CA (Remote Friendly)</p>
+                  <p className="font-bold">Bengaluru, Karnataka (Remote Friendly)</p>
                 </div>
               </NeonCard>
             </div>
@@ -93,11 +93,11 @@ export default function Contact() {
           {/* Contact Form */}
           <div className="bg-card border border-white/10 p-8 md:p-12 relative overflow-hidden group">
             <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 blur-[50px] rounded-full pointer-events-none" />
-            
+
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6 relative z-10">
               <div className="space-y-2">
                 <label className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Name</label>
-                <Input 
+                <Input
                   {...form.register("name")}
                   className="bg-black/50 border-white/10 focus:border-primary h-12 rounded-none"
                   placeholder="John Doe"
@@ -109,7 +109,7 @@ export default function Contact() {
 
               <div className="space-y-2">
                 <label className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Email</label>
-                <Input 
+                <Input
                   {...form.register("email")}
                   className="bg-black/50 border-white/10 focus:border-primary h-12 rounded-none"
                   placeholder="john@example.com"
@@ -121,7 +121,7 @@ export default function Contact() {
 
               <div className="space-y-2">
                 <label className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Message</label>
-                <Textarea 
+                <Textarea
                   {...form.register("message")}
                   className="bg-black/50 border-white/10 focus:border-primary min-h-[150px] rounded-none resize-none"
                   placeholder="Tell me about your project..."

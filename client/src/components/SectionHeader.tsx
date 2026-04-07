@@ -9,7 +9,7 @@ interface SectionHeaderProps {
 export function SectionHeader({ title, subtitle, centered = false }: SectionHeaderProps) {
   return (
     <div className={`mb-16 ${centered ? 'text-center' : ''}`}>
-      <motion.h2 
+      <motion.h2
         initial={{ opacity: 0, x: centered ? 0 : -20, y: centered ? 20 : 0 }}
         whileInView={{ opacity: 1, x: 0, y: 0 }}
         viewport={{ once: true }}
@@ -21,17 +21,17 @@ export function SectionHeader({ title, subtitle, centered = false }: SectionHead
         <span className="text-primary">.</span>
       </motion.h2>
       {subtitle && (
-        <motion.p 
+        <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
-          className="mt-4 text-muted-foreground text-lg max-w-2xl mx-auto"
+          className="mt-4 text-muted-foreground text-lg max-w-2xl text-left"
         >
           {subtitle}
         </motion.p>
       )}
-      <motion.div 
+      <motion.div
         initial={{ scaleX: 0 }}
         whileInView={{ scaleX: 1 }}
         viewport={{ once: true }}

@@ -29,7 +29,7 @@ export default function Home() {
                 I build blazing fast modern websites and engineer the SEO strategies that make them found.
                 Expert in React, Node, and WordPress ecosystems.
               </p>
-              
+
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/projects" className="px-8 py-4 bg-white text-black font-bold uppercase tracking-widest hover:bg-primary transition-colors flex items-center justify-center gap-2">
                   View Work <ArrowRight className="w-5 h-5" />
@@ -43,7 +43,7 @@ export default function Home() {
         </div>
 
         {/* Scroll Indicator */}
-        <motion.div 
+        <motion.div
           animate={{ y: [0, 10, 0] }}
           transition={{ repeat: Infinity, duration: 2 }}
           className="absolute bottom-10 left-1/2 -translate-x-1/2 text-muted-foreground"
@@ -114,8 +114,8 @@ export default function Home() {
             <Link href="/projects">
               <div className="group relative aspect-video bg-muted overflow-hidden cursor-pointer border border-white/10">
                 {/* landscape mountains abstract */}
-                <img 
-                  src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop" 
+                <img
+                  src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop"
                   alt="Project 1"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-60 group-hover:opacity-100"
                 />
@@ -128,8 +128,8 @@ export default function Home() {
             <Link href="/projects">
               <div className="group relative aspect-video bg-muted overflow-hidden cursor-pointer border border-white/10">
                 {/* modern architecture dark */}
-                <img 
-                  src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2670&auto=format&fit=crop" 
+                <img
+                  src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2670&auto=format&fit=crop"
                   alt="Project 2"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-60 group-hover:opacity-100"
                 />
@@ -149,12 +149,12 @@ export default function Home() {
           <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary to-transparent" />
           <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary to-transparent" />
         </div>
-        
+
         <div className="container mx-auto px-4 relative z-10 text-center">
           <h2 className="text-5xl md:text-8xl font-display font-bold uppercase mb-8">
-            Ready to <br/><span className="text-outline-white text-transparent" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.5)' }}>Level Up?</span>
+            Ready to <br /><span className="text-outline-white text-transparent" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.5)' }}>Level Up?</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-12">
+          <p className="text-xl text-muted-foreground mb-12">
             Whether you need a full-stack application or an SEO overhaul, I bring the technical edge your project needs.
           </p>
           <Link href="/contact" className="inline-block px-12 py-5 bg-primary text-black font-bold uppercase tracking-widest hover:bg-white transition-all hover:scale-105 shadow-[0_0_30px_rgba(0,243,255,0.3)] hover:shadow-[0_0_50px_rgba(255,255,255,0.5)]">
